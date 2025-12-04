@@ -1,0 +1,10 @@
+/vendor/
+sites/*/settings*.php
+sites/*/services*.yml
+/core/
+/modules/contrib/
+/themes/contrib/
+/sites/*/files/
+.settings.php
+/private/
+.env

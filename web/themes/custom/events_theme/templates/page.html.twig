@@ -1,0 +1,43 @@
+<body>
+  <header>
+    {{ page.header }}
+  </header>
+  <nav>
+    {{ page.primary_menu }}
+  </nav>
+  
+  {# Hero region #}
+  {% if page.hero %}
+    <div class="hero-region">
+      {{ page.hero }}
+    </div>
+  {% else %}
+    <div class="hero">
+      <h1>Local Events</h1>
+      <p>Find and attend events near you — music, tech, sports & more.</p>
+      <a href="/events" class="cta">See Events</a>
+    </div>
+  {% endif %}
+  
+  <main>
+    <div class="container">
+      {# Featured Events Section #}
+      <section class="featured-events-section">
+        
+        <div class="featured-events-grid">
+        {{ drupal_block('views_block:featured_events-block_1') }}
+        </div>
+      </section>
+      
+      {# Main page content #}
+    </div>
+    
+    <aside class="sidebar-first">
+      {{ page.sidebar_first }}
+    </aside>
+  </main>
+  
+  <footer>
+    {{ page.footer }}
+  </footer>
+</body>
