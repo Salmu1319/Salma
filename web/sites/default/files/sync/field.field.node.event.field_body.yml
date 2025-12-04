@@ -1,0 +1,28 @@
+uuid: 8fb791b1-1c3f-43c0-9f8f-6a88dc5e64ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.event
+  module:
+    - text
+id: node.event.field_body
+field_name: field_body
+entity_type: node
+bundle: event
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+field_type: text_long

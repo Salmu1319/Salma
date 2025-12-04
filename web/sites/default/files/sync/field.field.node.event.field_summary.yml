@@ -1,0 +1,19 @@
+uuid: 924b1613-aa82-4483-b360-5bac529960b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.event
+id: node.event.field_summary
+field_name: field_summary
+entity_type: node
+bundle: event
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
